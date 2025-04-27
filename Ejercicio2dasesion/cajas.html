@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    /**aplicando estilos*/
+    /**Cuales son los selectores de CSS: Clases, id, 
+    etiqueta, universal, atributos**/
+    /***/
+
+    *{
+        margin: 0;
+        padding: 0;
+        /*Ayuda a que no se colapsen las cajas con margin y padding*/
+        box-sizing: border-box;
+    }
+
+    h1{/**etiqueta*/
+        color: #8621d1;
+    }
+
+    .title{ /**clases: son reutilizables*/
+        text-align: center;
+    }
+
+    #title{ /**ID*/
+        font-size: 3rem/**unidad de medida en css: px, em, rem*/;
+        /**1rem=16px*/
+    }
+
+    /*Atributo*/
+    a[href="#"]:hover{
+        color: red;
+    }
+
+    /*IMPORTANTE*/
+    /*
+        nth-child: 
+    */
+    .container article:nth-child(2){
+        background-color: aqua;
+    }
+
+    .container article{ /*.container solo funcionará con los elementos article*/
+        background-color: #9a32eb;
+        width: 200px;
+        height: 200px;
+        
+        padding: 1rem;
+        margin: 1rem 3; /*1 rem arriba,abajo ;  3 lados*/
+    /*margin: 16px; todos los lados*/
+    }
+
+    /*agregamos u nuevo contenido al elemento*/
+    .hipervinculo:before{
+        content: "😂";
+        position: relative;
+    }
+
+    /*fontawesome*/
+    /**Representa cada elemento del html con ciertas propiedades
+        margin
+        padding
+
+        Cual es la diferencia de margin y el padding?
+        padding: es el contenido que esta dentro de la cajita
+        marging: espaciado que hay fuera de la caja
+
+        border
+        content
+    
+    */
+
+    /*
+        pseudoclase: hover(cuando uno se acerca a un elemento). cambiar el estado/comportamiento de una etiqueta (cuando el mouse queda encima de una etiqueta le cambia el color)
+        pseudoelemento: after, before. Cuando queremos cambiar un contenido a un elemento html
+    */
+</style>
+<body>
+    <h1 class="title" id="title">Introducción CSS</h1>
+    <a href="#" class="hipervinculo">Click aqui</a>
+    <section class="container">
+        <article id="caja1">FULL SATCK</article>
+        <article id="caja2"></article>
+        <article id="caja1"></article>
+        <article id="caja1"></article>
+    </section>
+
+    <h2 class="title">Holaa</h2>
+
+    <section>
+        <article></article>
+        <article></article>
+    </section>
+</body>
+</html>

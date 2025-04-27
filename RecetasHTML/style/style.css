@@ -1,0 +1,59 @@
+
+/*padre e hijo
+NO HAY COMAS
+*/
+.container-time .subtitle{
+    color: rgb(61, 13, 43);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+.subtitle{
+    color: rgb(165, 81, 42);
+    padding-bottom: 1rem 0;
+}
+
+/*
+Contendeores independientes son separados por comas
+
+*/
+.container-ingredents, .container-instructions, .container-nutrition{
+    margin-top: 1rem;
+    padding: 1rem;
+    /*border-bottom: solid 1px #000;*/
+}
+
+/*tienen en común el "li", se utiliza una pseudo clase IS
+is: ayuda a emglobar estilos para varios elementos 
+*/
+:is(.ingredients-list, .instructions-list) li{
+    padding: 6px 10px;
+}
+
+/* Otra forma de hacerlo cuando ambas tienen un elemento en comun
+.ingredients-list li, .instructions-list li{
+
+}*/
+
+.tabla-nutrition{
+    width:100%;
+    border-collapse: collapse;
+    
+}
+
+.tabla-nutrition tr{
+    border-bottom: solid 1px #000;
+    padding: 1rem ;
+    text-align: center;
+}
+
+.tabla-nutrition td{
+    padding: 0.5rem;
+}
+
+.tabla-nutrition td:nth-child(2){
+    color: #5f164d;
+    font-weight: bold;
+}
+

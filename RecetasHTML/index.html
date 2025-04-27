@@ -1,0 +1,113 @@
+
+<!--//¿Porque se le pone index? Es la primera pagina que busca el navegador, es la pagina principal-->
+<!--tipo de documento-->
+<!DOCTYPE html>
+<!--indicamos el idioma de la pagina de la pagina web-->
+<html lang="en">
+    <!--encabezado: el que manda la informacion al navegador-->
+        <head>
+            <!--metadatos: contienen info de tu pagina web-->
+            <meta charset="UTF-8"> <!--reconoce que la pagina web va a aceptar los caracteres en español-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--la página va a ser responsive-->
+            <!--Colocamos una descripción a la página web-->
+            <meta name="description" content="Semantica HTML5 de una página de recetas">
+            <title>Practica Recipe</title>
+            <link rel="stylesheet" href="./style/style.css">
+            <script src=""></script>
+        </head>
+        
+        <!--cuerpo: todo lo que va a ver el usuario-->
+        <body>
+            <!--Contenido principal: -->
+            <main>
+                <!--Figure: solo contenido visual como imagenes-->
+                <figure>
+                    <!--Lo mejor es alojar las imagenes es un servidor: un ejemplo es Google Drive, OneDrive, cloudinary(es gratis) -->
+                    <!--<img src="./img/images.jpg" alt="iniciar sesion">-->
+                    <figcaption>Fitness</figcaption> <!--La descrición de la imagen-->
+                    <img src="https://res.cloudinary.com/dmddi5ncx/image/upload/v1728854675/practicas/image-omelette_tkehzt.jpg" alt="omelette">
+                </figure>
+
+                <!--titulo principal-->
+                <h1>Simple Omelette Recipe</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur 
+                adipisicing elit. Non reprehenderit ipsam, 
+                ebitis ea consectetur ratione?</p>
+
+                <!---->
+                <section>
+                    <h3>Preparation Time</h3>
+                    <ul>
+                        <!--
+                            Strong: indica que el texto es importante
+                            b: indica un texto normal, generalmente solo se usa para diseño
+                        -->
+                        <li><strong>Total:</strong>Aproximadamente 10 minutos</li>
+                        <li><strong>Total:</strong>Aproximadamente 10 minutos</li>
+                        <li><strong>Total:</strong>Aproximadamente 10 minutos</li>
+                    </ul>
+                    <!--canincluse: nos ayuda a ver que etiquetas se pueden poner como hijas y cuales como padres-->
+                </section>
+                
+                <section class="container-ingredents">
+                <h3>Ingredientes</h3>
+                    <ul class="ingredients-list">
+                        <li>2 eggs</li>
+                        <li>1/4 cup of milk</li>
+                        <li>Salt and pepper to taste</li>
+                        <li>1 tablespoon of butter</li>
+                    </ul>
+                </section>
+                <hr/>
+                <section class="container-instructions">
+                <h3>Instructions</h3>
+                    <ol class="instructions-list">
+                        <li><strong>Beat the eggs</strong></li>
+                        <li><strong>heat the pan</strong></li>
+                        <li><strong>Cook the omelette</strong></li>
+                        <li><strong>Add fillings(optional)</strong></li>
+                    </ol>
+                </section>
+                <hr/>
+                <section class="container-nutrition">
+                    <h3>Nutrition</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. 
+                        Labore magnam assumenda odit 
+                        distinctio provident aut illum.
+                    </p>
+                    <table class="tabla-nutrition">
+                        <!--
+                            tr: representa una fila
+                            td: columna
+                            thead: encabezado
+                            tbody: cuerpo de la tabla 
+                        -->
+                        <tr class="fila">
+                            <td>Calories</td><!--columna-->
+                            <td>722kcal</td><!--columna-->    
+                        </tr>
+                        <tr>
+                            <td>Calories</td>
+                            <td>722kcal</td>
+                        </tr>
+                        <tr>
+                            <td>Calories</td>
+                            <td>722kcal</td>
+                        </tr>
+                        <tr>
+                            <td>Calories</td>
+                            <td>722kcal</td>
+                        </tr>
+                    </table>
+                </section>
+            </main>
+            <footer>
+                <h3>
+                    Jennifer Nieto - 2025
+                </h3>
+            </footer>
+        </body>
+</html>
+
